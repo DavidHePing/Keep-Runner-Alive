@@ -1,0 +1,12 @@
+name: Daily Runner Keep-Alive 🚀
+
+on:
+  schedule:
+    - cron: "*/1 * * * *"  # 22:00 UTC+8 → 14:00 UTC
+
+jobs:
+  keep-runner-alive:
+    runs-on: wsl-ubuntu
+    steps:
+      - name: Keep Runner Active
+        run: echo "Runner executing at 22:00 UTC+8"
