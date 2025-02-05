@@ -2,7 +2,7 @@ name: Daily Runner Keep-Alive 🚀
 
 on:
   schedule:
-    - cron: "*/1 * * * *"  # 22:00 UTC+8 → 14:00 UTC
+    - cron: "0 14 * * *"  # 22:00 UTC+8 → 14:00 UTC
   workflow_dispatch: # Allows manual execution
 
 jobs:
